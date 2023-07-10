@@ -1,0 +1,761 @@
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "9567189110"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: feac732d-343b-4f05-8c27-493783e15fda
+X-Runtime: 0.025242
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "9567189110",
+    "otp": "123456"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"b69f262db632ae1e7bb1e90b3faac714"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 6446022e-a5de-460a-91b8-fb27d9008cb2
+X-Runtime: 0.038907
+X-XSS-Protection: 1; mode=block
+Content-Length: 1762
+Connection: keep-alive
+
+{
+    "message": "OTP verified successfully. Welcome .",
+    "data": {
+        "lead": {
+            "id": 6052,
+            "name": null,
+            "mobile": "9567189110",
+            "email": null,
+            "dob": null,
+            "pincode": null,
+            "consent": true,
+            "crm_lead_id": "42bb2061-d052-edae-0875-64a3cd7db501",
+            "crm_opportunity_id": null,
+            "business_vintage": null,
+            "industry_master_id": null,
+            "purpose_of_loan_master_id": null,
+            "nature_of_business_master_id": null,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": null,
+            "application_type_master_id": null,
+            "digital_payments_accepted": null,
+            "entity_name": null,
+            "trading_name": null,
+            "gst_registered": null,
+            "business_registration_date": null,
+            "gender": null,
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2023-07-04T07:43:36.638Z",
+            "updated_at": "2023-07-04T07:43:36.638Z",
+            "cities_master_id": null,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": null,
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": null,
+            "stage_drop_off": "quick-eligibility/business-location",
+            "approved": null,
+            "rejection_reason": null,
+            "bureau_status": "open",
+            "scorecard": "not_run",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": false,
+            "nature_of_business_id": null,
+            "identity_address_proof": null,
+            "as_application_id": null,
+            "branch_name": null,
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": null,
+            "occupation_type": null,
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "785643266"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 7434bb69-a6d5-4514-b9a2-d21da8507d83
+X-Runtime: 0.020295
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "785643266",
+    "otp": "123456"
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: e3f65b9c-a55e-428b-9c43-1f17caa513e9
+X-Runtime: 0.167803
+X-XSS-Protection: 1; mode=block
+Content-Length: 108
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "Please enter a valid 10 digit Mobile to continue.",
+        "message": null,
+        "error_code": "NG-LR"
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "87654320972"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: ef83cd7a-b0ba-4768-ba06-a249896b294b
+X-Runtime: 0.020278
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "87654320972",
+    "otp": "123456"
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 090b1760-32d0-4c41-bf79-6795262d7b8e
+X-Runtime: 0.144098
+X-XSS-Protection: 1; mode=block
+Content-Length: 108
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "Please enter a valid 10 digit Mobile to continue.",
+        "message": null,
+        "error_code": "NG-LR"
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "nature_of_business_id": "1",
+        "action": "nature_of_business"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"04663b4f629110153c68fed57b3fde87"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 1439bdb4-19e0-4bbe-aa82-4b3b7003c706
+X-Runtime: 0.146725
+X-XSS-Protection: 1; mode=block
+Content-Length: 1895
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "nature_of_business_id": 1,
+            "id": 2839,
+            "name": "SWETHA MARAPAKA",
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735P",
+            "application_type_master_id": 1,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T05:08:05.941Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/business-document",
+            "approved": null,
+            "rejection_reason": "Non Retailer",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T05:04:17.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "pan": "BAWPM3735P",
+        "action": "business_pan",
+        "application_type_master_id": 1
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"29a0874d5de307e87ad482e6fefb82ae"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: aa685da2-f8c9-4070-ab9c-8b506da26c6e
+X-Runtime: 1.729448
+X-XSS-Protection: 1; mode=block
+Content-Length: 1898
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "pan": "BAWPM3735P",
+            "application_type_master_id": 1,
+            "id": 2839,
+            "name": "SWETHA MARAPAKA",
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T05:08:06.566Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/business-information",
+            "approved": null,
+            "rejection_reason": "Non Retailer",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T05:04:17.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "pan": "BAWPM3735",
+        "action": "business_pan",
+        "application_type_master_id": 2
+    }
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 50ea7a8a-c186-45e1-a95f-97b4e72933ef
+X-Runtime: 0.430750
+X-XSS-Protection: 1; mode=block
+Content-Length: 223
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "We regret to inform that you are not eligible as per our internal company norms. In case of any changes in the norms, our representative will get in touch with you.",
+        "message": null,
+        "error_code": "NG-LR"
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "business_document": "true",
+        "action": "business_document"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"1ad59b9753b1e6374e765df99d9bd36b"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 45998b1f-49d1-4c00-bf5e-039e766053c3
+X-Runtime: 0.139497
+X-XSS-Protection: 1; mode=block
+Content-Length: 1878
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "id": 2839,
+            "name": null,
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735",
+            "application_type_master_id": 2,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T05:08:09.019Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/loan-purpose",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T05:08:08.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "purpose_of_loan_master_id": "5",
+        "action": "loan_purpose"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"917ed17b67145ed13a00f53d2af2b9df"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 49c2a977-6998-4dcd-ad5a-e6ebdcc1cbe6
+X-Runtime: 0.144167
+X-XSS-Protection: 1; mode=block
+Content-Length: 1868
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "purpose_of_loan_master_id": 5,
+            "id": 2839,
+            "name": null,
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735",
+            "application_type_master_id": 2,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T05:08:09.414Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "kyc/business-details",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T05:08:08.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
