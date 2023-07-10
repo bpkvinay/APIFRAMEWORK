@@ -1,0 +1,140 @@
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "9567189110"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: af87e648-c4de-4f6a-bddb-d7e6705dfd8a
+X-Runtime: 0.029198
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "9567189110",
+    "otp": "123456"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"b69f262db632ae1e7bb1e90b3faac714"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: a72260fd-0066-43a0-b7f3-979d9adf6b4e
+X-Runtime: 0.032624
+X-XSS-Protection: 1; mode=block
+Content-Length: 1762
+Connection: keep-alive
+
+{
+    "message": "OTP verified successfully. Welcome .",
+    "data": {
+        "lead": {
+            "id": 6052,
+            "name": null,
+            "mobile": "9567189110",
+            "email": null,
+            "dob": null,
+            "pincode": null,
+            "consent": true,
+            "crm_lead_id": "42bb2061-d052-edae-0875-64a3cd7db501",
+            "crm_opportunity_id": null,
+            "business_vintage": null,
+            "industry_master_id": null,
+            "purpose_of_loan_master_id": null,
+            "nature_of_business_master_id": null,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": null,
+            "application_type_master_id": null,
+            "digital_payments_accepted": null,
+            "entity_name": null,
+            "trading_name": null,
+            "gst_registered": null,
+            "business_registration_date": null,
+            "gender": null,
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2023-07-04T07:43:36.638Z",
+            "updated_at": "2023-07-04T07:43:36.638Z",
+            "cities_master_id": null,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": null,
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": null,
+            "stage_drop_off": "quick-eligibility/business-location",
+            "approved": null,
+            "rejection_reason": null,
+            "bureau_status": "open",
+            "scorecard": "not_run",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": false,
+            "nature_of_business_id": null,
+            "identity_address_proof": null,
+            "as_application_id": null,
+            "branch_name": null,
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": null,
+            "occupation_type": null,
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}

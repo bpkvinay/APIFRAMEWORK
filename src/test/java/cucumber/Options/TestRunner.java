@@ -9,14 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 (
 features="src/test/java/features",
 glue= {"stepDefinations"},
+tags="@Addlead",
 monochrome=true,
-plugin = {"pretty",
-		
+plugin= {"pretty",
 		"html:target/cucumber.html",
-		"json:target/cucumber.json",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-
-)
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
 
 

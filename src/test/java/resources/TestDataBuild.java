@@ -44,6 +44,19 @@ public static String addotpwithmobile(String number, String otp) {
 	
 	
 }
+
+public static String payloadlocationeligibiltychecks(String leadid,String pincode,String email) {
+	return "{\r\n"
+			+ "  \"eligibility_check\": {\r\n"
+			+ "    \"lead_id\": \""+leadid+"\",\r\n"
+			+ "    \"pincode\": \""+pincode+"\",\r\n"
+			+ "    \"email\": \""+email+"\",\r\n"
+			+ "    \"action\": \"business_location\"\r\n"
+			+ "  }\r\n"
+			+ "}";
+	
+	
+}
 	
 
 	
