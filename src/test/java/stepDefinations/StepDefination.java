@@ -2,6 +2,7 @@ package stepDefinations;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.Console;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -61,13 +62,11 @@ public class StepDefination extends Utils {
 	    // Write code here that turns the phrase above into concrete actions
 		 System.out.println(response.getStatusCode());
 		assertEquals(response.getStatusCode(),200);
-		String gh = response.getBody().asString();
-		
-		
-	    
+
 		
 	
 	}
+	
 	@Then("the call Payload with {string} {string}")
 	public void the_call_payload_with(String string, String string2) throws IOException {
 		res=given().log().all().spec(requestSpecification())
@@ -77,7 +76,7 @@ public class StepDefination extends Utils {
 	@Then("calls endpoint {string} with {string} http request")
 	public void calls_endpoint_with_http_request(String string, String string2) {
 		APIResources resourceAPI=APIResources.valueOf(string);
-		System.out.println(resourceAPI.getResource());
+		//System.out.println(resourceAPI.getResource());
 		
 		
 		resspec =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
@@ -95,25 +94,4 @@ public class StepDefination extends Utils {
 	
 	}
 	
-	@Given("EligibilitychecksAPI Payload with {string} {string} {string}")
-	public void eligibilitychecks_api_payload_with(String string, String string2, String string3) throws IOException {
-		res=given().log().all().spec(requestSpecification())
-				.body(TestDataBuild.payloadlocationeligibiltychecks(string,string2,string3));
-	}
 
-	@When("calls Endpoint {string} with {string} http Requests")
-	public void calls_endpoint_with_http_requests(String string, String string2) {
-		APIResources resourceAPI=APIResources.valueOf(string);
-		System.out.println(resourceAPI.getResource());
-		
-		
-		resspec =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		
-		if(string2.equalsIgnoreCase("POST"))
-		 response=res.when().post(resourceAPI.getResource());
-		else if(string2.equalsIgnoreCase("GET"))
-			 response =res.when().get(resourceAPI.getResource()); 
-	}
-	
-
-}
