@@ -21,16 +21,17 @@ public class Utils {
 	public static RequestSpecification req;
 	public RequestSpecification requestSpecification() throws IOException
 	{
+		if(req==null) {
+		PrintStream logs = new PrintStream(new FileOutputStream("Logging2.txt"));
 		
+		req=new RequestSpecBuilder().setBaseUri(getGlobalValue("InstaBaseURL"))
+				 .addFilter(RequestLoggingFilter.logRequestTo(logs))
+				 .addFilter(ResponseLoggingFilter.logResponseTo(logs))
+		         .setContentType(ContentType.JSON).build();
+		// return req;
+		}
 		
-		
-		 req=new RequestSpecBuilder().setBaseUri(getGlobalValue("InstaBaseURL"))
-		.setContentType(ContentType.JSON).build();
-		 return req;
-		
-		
-		
-		
+		 return req;	
 	}
 	
 	
@@ -52,4 +53,33 @@ public class Utils {
 		JsonPath   js = new JsonPath(resp);
 		return js.get(key).toString();
 	}
+	
+	public static void storeconsoleoutput(String output) {
+        try {
+            
+            FileOutputStream fileOut = new FileOutputStream("output.txt");
+            PrintStream printStream = new PrintStream(fileOut);
+            System.setOut(printStream);
+            System.out.println(output);
+            printStream.close();
+            fileOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

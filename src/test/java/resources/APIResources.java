@@ -5,7 +5,7 @@ public enum APIResources {
 	InstaOtpSent("/api/v2/otp"),
 	InstaVerifyOTP("/api/v2/register"),
 	CRMGetLeadDetails("/index.php?entryPoint=crmapi"),
-	InstaPincodeemail("/api/v2/eligibility_checks");
+	Instaeligibiltychecks("/api/v2/eligibility_checks");
 	
 	
 	
