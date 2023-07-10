@@ -45,6 +45,7 @@ public static String addotpwithmobile(String number, String otp) {
 	
 }
 
+
 public static String AddBusinessNature(String Leadid,String Nature,String Action) {
 	
 	return "{\r\n"

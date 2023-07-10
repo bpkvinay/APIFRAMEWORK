@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
 
+
+
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -24,14 +26,7 @@ public class Utils {
 		if(req==null) {
 		PrintStream logs = new PrintStream(new FileOutputStream("Logging2.txt"));
 		
-		req=new RequestSpecBuilder().setBaseUri(getGlobalValue("InstaBaseURL"))
-				 .addFilter(RequestLoggingFilter.logRequestTo(logs))
-				 .addFilter(ResponseLoggingFilter.logResponseTo(logs))
-		         .setContentType(ContentType.JSON).build();
-		// return req;
-		}
-		
-		 return req;	
+
 	}
 	
 	

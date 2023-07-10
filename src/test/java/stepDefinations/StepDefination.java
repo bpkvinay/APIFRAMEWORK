@@ -62,10 +62,7 @@ public class StepDefination extends Utils {
 	    // Write code here that turns the phrase above into concrete actions
 		 System.out.println(response.getStatusCode());
 		assertEquals(response.getStatusCode(),200);
-		String re = response.getBody().asString();
-		System.out.println(re);
-		//Utils.storeconsoleoutput(re);
-		
+
 		
 	
 	}
@@ -94,58 +91,7 @@ public class StepDefination extends Utils {
 	public void verify_otp_call_got_success_with_status_code(Integer int1) {
 		System.out.println(response.getStatusCode());
 		assertEquals(response.getStatusCode(),200);
-	}
-	
-	@Given("Add Business Nature Payload with values of {string}  {string} {string}")
-	public void add_business_nature_payload_with_values_of(String string, String string2, String string3) throws IOException {
-	res= given().log().all().spec(requestSpecification()).
-	 body( TestDataBuild.AddBusinessNature(string, string2, string3));
 	
 	}
+	
 
-	@Given("call end point {string} and {string} the request")
-	public void call_end_point_and_the_request(String string, String string2) {
-		APIResources resourceAPI=APIResources.valueOf(string);
-		//System.out.println(resourceAPI.getResource());
-		
-		
-		resspec =new ResponseSpecBuilder().expectStatusCode(200).
-				expectContentType(ContentType.JSON).build();
-		
-		if(string2.equalsIgnoreCase("POST"))
-		 response=res.when().post(resourceAPI.getResource());
-		else if(string2.equalsIgnoreCase("GET"))
-			 response =res.when().get(resourceAPI.getResource()); 
-		
-	}
-
-	@Given("valiadte responce status code {int}")
-	public void valiadte_responce_status_code(Integer int1) {
-	    res.then().statusCode(int1);
-		
-	}
-
-	@Given("Add Business PAN payload with values of {string}  {string} {string} {string}")
-	public void add_business_pan_payload_with_values_of(String Leadid, String PAN, String action, String masterid) throws IOException {
-		res=given().log().all().spec(requestSpecification()).
-		body( TestDataBuild.AddBusinessPAN(Leadid, PAN, action, masterid));
-		
-	}
-
-	@Given("Add Business Documents payload with values of {string}  {string} {string}")
-	public void add_business_documents_payload_with_values_of(String string, String string2, String string3) throws IOException {
-		res=given().log().all().spec(requestSpecification()).
-		given().log().all().body( TestDataBuild.AddBusinessDocument(string, string2, string3));
-		
-	}
-
-	@Given("Add Business loan purpose payload value of {string}  {string} {string}")
-	public void add_business_loan_purpose_payload_value_of(String string, String string2, String string3) throws IOException {
-		res=given().log().all().spec(requestSpecification()).
-		given().log().all().body( TestDataBuild.Addloanpurpose(string, string2, string3));
-		
-		
-	}
-
-
-}

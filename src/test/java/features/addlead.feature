@@ -6,7 +6,7 @@ Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
 	Then the API call got success with status code 200
 	And the call Payload with "<Mobilenumber>" "<OTP>"
 	Then calls endpoint "InstaVerifyOTP" with "POST" http request
-	Then verifyOTP call got success with status code 200
+	Then the API call got success with status code 200
 #	And "status" in response body is "OK"
 #	And "scope" in response body is "APP"
 #	And verify place_Id created maps to "<name>" using "getPlaceAPI"
@@ -56,6 +56,7 @@ Then the API call got success with status code 200
 Examples:
 |Leadid                              |num|loanpurpose |
 |37faa01f-e9ab-d47f-62f8-634f828110b2|5  |loan_purpose|
+
 
 
 
