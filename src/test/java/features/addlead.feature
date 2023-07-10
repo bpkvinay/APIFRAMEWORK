@@ -16,8 +16,6 @@ Examples:
 	|9567189110 |123456|
 
 	
-	
-	
 	Scenario Outline: Quick Eligibilty checks for Buisness Location
 	
 	Given EligibilitychecksAPI Payload with "<lead_id>" "<pincode>" "<email>"
@@ -29,6 +27,8 @@ Examples:
 	|lead_id|pincode|email|
 	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560040|huj@gmail.com|
 	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560078|huj@|
+	
+	
 	
 	
 	 
