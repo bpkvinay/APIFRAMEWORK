@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 (
 features="src/test/java/features",
 glue= {"stepDefinations"},
-tags="@Addlead",
+//tags="@Addlead",
 monochrome=true,
 plugin= {"pretty",
 		"html:target/cucumber.html"})
