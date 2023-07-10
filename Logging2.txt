@@ -23,7 +23,8 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-
+X-Request-Id: d3724f0e-dbe7-4885-9787-847373ed2703
+X-Runtime: 0.028138
 X-XSS-Protection: 1; mode=block
 Content-Length: 47
 Connection: keep-alive
@@ -58,7 +59,8 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-
+X-Request-Id: 0398cf15-51a6-405d-8a98-570f63d752ed
+X-Runtime: 0.042350
 X-XSS-Protection: 1; mode=block
 Content-Length: 1762
 Connection: keep-alive
@@ -136,4 +138,654 @@ Connection: keep-alive
         }
     }
 }
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+        "pincode": "560040",
+        "email": "huj@gmail.com",
+        "action": "business_location"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"5e12987bd84eba412e493f348d4c7c55"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 9043abbb-6219-4745-a77b-4e68fa44323f
+X-Runtime: 0.844060
+X-XSS-Protection: 1; mode=block
+Content-Length: 1767
+Connection: keep-alive
 
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "email": "huj@gmail.com",
+            "pincode": "560040",
+            "id": 6050,
+            "name": null,
+            "mobile": "9191910000",
+            "dob": null,
+            "consent": true,
+            "crm_lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+            "crm_opportunity_id": null,
+            "business_vintage": null,
+            "industry_master_id": null,
+            "purpose_of_loan_master_id": null,
+            "nature_of_business_master_id": null,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": null,
+            "application_type_master_id": null,
+            "digital_payments_accepted": null,
+            "entity_name": null,
+            "trading_name": null,
+            "gst_registered": null,
+            "business_registration_date": null,
+            "gender": null,
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2023-07-04T07:36:41.720Z",
+            "updated_at": "2023-07-10T09:08:31.715Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": null,
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": null,
+            "stage_drop_off": "quick-eligibility/business-pan",
+            "approved": null,
+            "rejection_reason": null,
+            "bureau_status": "open",
+            "scorecard": "not_run",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": false,
+            "nature_of_business_id": null,
+            "identity_address_proof": null,
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": null,
+            "occupation_type": null,
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+        "pincode": "560078",
+        "email": "huj@",
+        "action": "business_location"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"f3e1f86965ec24c69d653ec863d7f0de"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 6290c130-920a-4926-b636-57041b86eb8d
+X-Runtime: 0.810676
+X-XSS-Protection: 1; mode=block
+Content-Length: 1758
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "email": "huj@",
+            "pincode": "560078",
+            "id": 6050,
+            "name": null,
+            "mobile": "9191910000",
+            "dob": null,
+            "consent": true,
+            "crm_lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+            "crm_opportunity_id": null,
+            "business_vintage": null,
+            "industry_master_id": null,
+            "purpose_of_loan_master_id": null,
+            "nature_of_business_master_id": null,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": null,
+            "application_type_master_id": null,
+            "digital_payments_accepted": null,
+            "entity_name": null,
+            "trading_name": null,
+            "gst_registered": null,
+            "business_registration_date": null,
+            "gender": null,
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2023-07-04T07:36:41.720Z",
+            "updated_at": "2023-07-10T09:08:32.821Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": null,
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": null,
+            "stage_drop_off": "quick-eligibility/business-pan",
+            "approved": null,
+            "rejection_reason": null,
+            "bureau_status": "open",
+            "scorecard": "not_run",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": false,
+            "nature_of_business_id": null,
+            "identity_address_proof": null,
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": null,
+            "occupation_type": null,
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "nature_of_business_id": "1",
+        "action": "nature_of_business"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"66196195e630356fabd5ceef2a4cd8ed"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 8c658fc2-cc5e-4f1d-8091-86aebfc2b537
+X-Runtime: 0.146008
+X-XSS-Protection: 1; mode=block
+Content-Length: 1883
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "nature_of_business_id": 1,
+            "id": 2839,
+            "name": null,
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735",
+            "application_type_master_id": 2,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T09:08:33.888Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/business-document",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "pan": "BAWPM3735P",
+        "action": "business_pan",
+        "application_type_master_id": 1
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"ad3f80782e053ebffe0da6046d9a9311"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: e665b32e-af4c-4734-8ea6-1b0decee9265
+X-Runtime: 4.877574
+X-XSS-Protection: 1; mode=block
+Content-Length: 1900
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "pan": "BAWPM3735P",
+            "application_type_master_id": 1,
+            "id": 2839,
+            "name": "SWETHA MARAPAKA",
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T09:08:36.851Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/business-information",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "business_document": "true",
+        "action": "business_document"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e1aa32038055cea32a6d39d77d77522e"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 6b72c5f6-4626-4e42-8c84-bc1bff12e687
+X-Runtime: 0.152338
+X-XSS-Protection: 1; mode=block
+Content-Length: 1892
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "id": 2839,
+            "name": "SWETHA MARAPAKA",
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "purpose_of_loan_master_id": 5,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735P",
+            "application_type_master_id": 1,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T09:08:39.436Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "quick-eligibility/loan-purpose",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "purpose_of_loan_master_id": "5",
+        "action": "loan_purpose"
+    }
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"f8829dfe663991d666ce33cb058ed1c1"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 48909cef-2ca6-40be-a5fa-a266b2eee7de
+X-Runtime: 0.145813
+X-XSS-Protection: 1; mode=block
+Content-Length: 1882
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "purpose_of_loan_master_id": 5,
+            "id": 2839,
+            "name": "SWETHA MARAPAKA",
+            "mobile": "7786768115",
+            "email": "check@gmail.com",
+            "dob": "1997-02-27",
+            "pincode": "560076",
+            "consent": true,
+            "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+            "crm_opportunity_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
+            "nature_of_business_master_id": 8,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": "BAWPM3735P",
+            "application_type_master_id": 1,
+            "digital_payments_accepted": null,
+            "entity_name": "business one",
+            "trading_name": "business one",
+            "gst_registered": null,
+            "business_registration_date": "2020-03-11",
+            "gender": "M",
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2022-10-19T04:53:36.849Z",
+            "updated_at": "2023-07-10T09:08:39.834Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": "18AABCU9603R1ZM",
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": 9,
+            "stage_drop_off": "kyc/business-details",
+            "approved": null,
+            "rejection_reason": "Non Proprietor",
+            "bureau_status": "received",
+            "scorecard": "eligible",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": true,
+            "nature_of_business_id": 1,
+            "identity_address_proof": "file_upload",
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "occupation_type": "Business Owner",
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
