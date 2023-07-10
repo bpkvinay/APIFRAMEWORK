@@ -23,8 +23,7 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: af87e648-c4de-4f6a-bddb-d7e6705dfd8a
-X-Runtime: 0.029198
+
 X-XSS-Protection: 1; mode=block
 Content-Length: 47
 Connection: keep-alive
@@ -59,8 +58,7 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: a72260fd-0066-43a0-b7f3-979d9adf6b4e
-X-Runtime: 0.032624
+
 X-XSS-Protection: 1; mode=block
 Content-Length: 1762
 Connection: keep-alive
@@ -138,3 +136,4 @@ Connection: keep-alive
         }
     }
 }
+

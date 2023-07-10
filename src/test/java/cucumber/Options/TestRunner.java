@@ -13,7 +13,7 @@ tags="@Addlead",
 monochrome=true,
 plugin= {"pretty",
 		"html:target/cucumber.html",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+
 
 
 
