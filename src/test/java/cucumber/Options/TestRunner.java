@@ -12,6 +12,7 @@ glue= {"stepDefinations"},
 //tags="@Addlead",
 monochrome=true,
 plugin= {"pretty",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		"html:target/cucumber.html"})
 
 

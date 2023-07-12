@@ -112,7 +112,18 @@ public static String payloadlocationeligibiltychecks(String leadid,String pincod
 	
 }
 
-
+public static String Businessinformationpayload(String lead,String occupationType,String BusinessVintage,String Industryid,String action) {
+	 
+	return "{\r\n"
+			+ "  \"eligibility_check\": {\r\n"
+			+ "    \"lead_id\": \""+lead+"\",\r\n"
+			+ "    \"occupation_type\": \""+occupationType+"\",\r\n"
+			+ "    \"business_vintage\": \""+BusinessVintage+"\",\r\n"
+			+ "    \"industry_master_id\": "+Industryid+",\r\n"
+			+ "    \"action\": \""+action+"\"\r\n"
+			+ "  }\r\n"
+			+ "}";
+}
 
 
 

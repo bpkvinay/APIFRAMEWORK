@@ -8,9 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import org.testng.Assert;
 
 import static org.junit.Assert.*;
+import static org.testng.Assert.assertEquals;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,6 +33,7 @@ public class StepDefination extends Utils {
 	ResponseSpecification resspec;
 	Response response;
 	TestDataBuild data =new TestDataBuild();
+	Utils ul=new Utils();
 
 	
 
@@ -40,6 +43,8 @@ public class StepDefination extends Utils {
 		 res=given().log().all().spec(requestSpecification())
 		.body(TestDataBuild.addlead(string));
 	}
+	
+	
 
 	@When("user calls endpoint {string} with {string} http request")
 	public void user_calls_endpoint_with_http_request(String string, String string2) {
@@ -64,10 +69,17 @@ public class StepDefination extends Utils {
 		assertEquals(response.getStatusCode(),200);
 		String re = response.getBody().asString();
 		System.out.println(re);
-		//Utils.storeconsoleoutput(re);
 		
-		
+	}
 	
+	
+	@Then("{string} in response body is {string}")
+	public void in_response_body_is(String key, String value) {
+		String resp = response.asString();
+		JsonPath js=new JsonPath(resp);
+		assertEquals(js.get(key),value);
+		
+		
 	}
 	
 	@Then("the call Payload with {string} {string}")
@@ -89,6 +101,8 @@ public class StepDefination extends Utils {
 		else if(string2.equalsIgnoreCase("GET"))
 			 response =res.when().get(resourceAPI.getResource()); 
 	}
+	
+	
 
 	@Then("verifyOTP call got success with status code {int}")
 	public void verify_otp_call_got_success_with_status_code(Integer int1) {
@@ -100,7 +114,7 @@ public class StepDefination extends Utils {
 	public void add_business_nature_payload_with_values_of(String string, String string2, String string3) throws IOException {
 	res= given().log().all().spec(requestSpecification()).
 	 body( TestDataBuild.AddBusinessNature(string, string2, string3));
-	
+	 
 	}
 
 	@Given("call end point {string} and {string} the request")
@@ -134,15 +148,16 @@ public class StepDefination extends Utils {
 
 	@Given("Add Business Documents payload with values of {string}  {string} {string}")
 	public void add_business_documents_payload_with_values_of(String string, String string2, String string3) throws IOException {
-		res=given().log().all().spec(requestSpecification()).
-		given().log().all().body( TestDataBuild.AddBusinessDocument(string, string2, string3));
+		res=given().log().all().spec(requestSpecification())
+		.body( TestDataBuild.AddBusinessDocument(string, string2, string3));
 		
+	
 	}
 
 	@Given("Add Business loan purpose payload value of {string}  {string} {string}")
 	public void add_business_loan_purpose_payload_value_of(String string, String string2, String string3) throws IOException {
-		res=given().log().all().spec(requestSpecification()).
-		given().log().all().body( TestDataBuild.Addloanpurpose(string, string2, string3));
+		res=given().log().all().spec(requestSpecification())
+		.body( TestDataBuild.Addloanpurpose(string, string2, string3));
 		
 		
 	}
@@ -166,9 +181,17 @@ public class StepDefination extends Utils {
 			 response =res.when().get(resourceAPI.getResource()); 
 	}
 	
+	
+	@Given("Add Business Information payload with {string} {string} {string} {string} {string}")
+	public void add_business_information_payload_with(String string, String string2, String string3, String string4, String string5) throws IOException {
+	    res=given().log().all().spec(requestSpecification())
+	    .body( TestDataBuild.Businessinformationpayload(string, string2, string3, string4, string5));
+	    
+	}
 
 
 }
+
 
 
 

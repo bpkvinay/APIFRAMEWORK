@@ -7,19 +7,24 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Properties;
 
-
+import org.hamcrest.Matcher;
+import org.junit.Assert;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBodyExtractionOptions;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 
 public class Utils {
 
+	
 	public static RequestSpecification req;
 	public RequestSpecification requestSpecification() throws IOException
 	{
@@ -57,6 +62,10 @@ public class Utils {
 		JsonPath   js = new JsonPath(resp);
 		return js.get(key).toString();
 	}
+	
+ 
+
+
 
 	
 }
