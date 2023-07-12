@@ -7,6 +7,7 @@ Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
 	And the call Payload with "<Mobilenumber>" "<OTP>"
 	Then calls endpoint "InstaVerifyOTP" with "POST" http request
 	Then the API call got success with status code 200
+#	Then verify the mobile when we call "<mobile>"
 #	And "status" in response body is "OK"
 #	And "scope" in response body is "APP"
 #	And verify place_Id created maps to "<name>" using "getPlaceAPI"
@@ -29,6 +30,7 @@ Examples:
 	|lead_id|pincode|email|
 	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560040|huj@gmail.com|
 	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560078|huj@|
+	 
 
 
 

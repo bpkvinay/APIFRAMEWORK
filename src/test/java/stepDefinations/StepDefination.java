@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import com.itextpdf.text.log.SysoCounter;
 
 import static org.junit.Assert.*;
 import io.cucumber.java.en.Given;
@@ -31,6 +31,7 @@ public class StepDefination extends Utils {
 	ResponseSpecification resspec;
 	Response response;
 	TestDataBuild data =new TestDataBuild();
+	Utils ul= new Utils();
 
 	
 
@@ -167,8 +168,17 @@ public class StepDefination extends Utils {
 	}
 	
 
-
+//@Then("verify mobilenumber created maps to {string} {string2}")
+//public void verify_mobilenumber_created_maps_to_using(String string,String string2) throws IOException {
+//	res=given().log().all().spec(requestSpecification())
+//			.body(TestDataBuild.addotpwithmobile(string, string2));
+//	          System.out.println(getJsonPath(response, "mobile"));
+	
+	
+	
 }
+
+
 
 
 
