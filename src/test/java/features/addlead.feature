@@ -12,6 +12,7 @@ Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
 	
   
 
+
 Examples:
 	|Mobilenumber|OTP|
 	|9567189110 |123456|
@@ -32,7 +33,11 @@ Examples:
 	Examples:
 	|lead_id|pincode|email|
 	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560040|huj@gmail.com|
+
 #	|2266053a-b11d-d9df-f00e-64a3cc8969b2|560078|huj@|
+
+	 
+
 
 Scenario Outline: Verify the Business information
 Given Add Business Information payload with "<lead>" "<occupationType>" "<BusinessVintage>" "<Industryid>" "<action>"
