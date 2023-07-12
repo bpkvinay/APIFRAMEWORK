@@ -82,7 +82,8 @@ public class StepDefination extends Utils {
 	public void in_response_body_is(String key, String value) {
 		String resp = response.asString();
 		JsonPath js=new JsonPath(resp);
-		assertEquals(js.get(key),value);
+		assertEquals(js.get(key).toString(),value);
+		System.out.println(js.get(key).toString());
 		
 		
 	}
@@ -190,7 +191,7 @@ public class StepDefination extends Utils {
 	@Given("Add Business Information payload with {string} {string} {string} {string} {string}")
 	public void add_business_information_payload_with(String string, String string2, String string3, String string4, String string5) throws IOException {
 	    res=given().log().all().spec(requestSpecification())
-	    .body( TestDataBuild.Businessinformationpayload(string, string2, string3, string4, string5));
+	    .body(TestDataBuild.Businessinformationpayload(string, string2, string3, string4, string5));
 	    
 	}
 
