@@ -17,9 +17,9 @@ Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
 
 Examples:
 	|Mobilenumber|OTP|
-	|9567189110 |123456|
-  |785643266 |123456|
- |87654320972|123456|
+	|9567189111  |123456|
+  |785643266   |123456|
+  |87654320972 |123456|
  
  @regres
  Scenario Outline: Quick Eligibilty checks for Buisness Location
