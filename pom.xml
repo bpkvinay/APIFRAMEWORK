@@ -38,6 +38,11 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+							
+  
+    <!-- report theme -->
+    <!-- standard, dark -->
+    <theme>dark</theme>
                             <projectName>cucumber-jvm-example</projectName>
                             <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
                             <skip>false</skip>
