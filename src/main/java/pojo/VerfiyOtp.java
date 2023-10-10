@@ -7,11 +7,6 @@ private String mobile;
 private String otp;
 private String lead_source;
 
-
-
-
-
-
 public String getmobile() {
 	return mobile;
 }

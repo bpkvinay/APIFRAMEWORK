@@ -70,22 +70,45 @@ public class Utils {
 		return js.get(key).toString();
 	}
 	
-  public void mysqlconnector(String query,String Value) throws SQLException {
-	 Driver d=new Driver();
-	 Connection connection = DriverManager.getConnection(null, null, null);
-	 Statement statement = connection.createStatement();
-	 ResultSet resultset = statement.executeQuery(query);
-	 resultset.next();
-	 resultset.getString(Value);
-	 statement.close();
-	 connection.close();
+  
+  
+  //public void 
+	
+public void EndPointwithHttpRequest(String EndPoint, String HttpRequest) throws IOException {
+		
+		
+		
+		APIResources resourceAPI=APIResources.valueOf(EndPoint);
+		ResponseSpecification resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		
+		
+		
+		Object response;
+		RestAssured res = null;
+		if
+		(HttpRequest.equalsIgnoreCase("POST"))
+		response=RestAssured.when().post(resourceAPI.getResource());
+		
+		else 
+			if
+			(HttpRequest.equalsIgnoreCase("GET"))
+			 response =RestAssured.when().get(resourceAPI.getResource());
+		
+	}
+	 
+
 	  
-  }
+  
 
 
 
 	
 }
+
+
+
+	
+
 	
 	
 	

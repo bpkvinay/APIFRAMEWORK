@@ -1,28 +1,5 @@
 
 Feature: Validating Place API
-@Addlead
-Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
-	Given AddLeadAPI Payload with "<Mobilenumber>"
-	When user calls endpoint "InstaOtpSent" with "POST" http request
-	Then the API call got success with status code 200
-	And "message" in response body is "OTP sent successfully"
-	And the call Payload with "<Mobilenumber>" "<OTP>"
-	Then calls endpoint "InstaVerifyOTP" with "POST" http request
-	Then the API call got success with status code 200
-	And "message" in response body is "OTP verified successfully. Welcome ."
-	And "data.lead.mobile" in response body is "<Mobilenumber>"
-	
-	
-  
-
-
-Examples:
-	|Mobilenumber|OTP|
-	|9567189111  |123456|
-  |785643266   |123456|
-  |87654320972 |123456|
-
- 
 #-------------------------------------------------------------------------------------------------------------------------
   @RegisterLeadAPI
   Scenario Outline: Verify if Lead is being Succesfully added using RegisterAPI
@@ -45,7 +22,7 @@ Examples:
 #------------------------------------------------------------------------------------------------------------------------
   @quick-eligibility/business-locationAPI
   Scenario Outline: Quick Eligibilty checks for Buisness Location
-    Given EligibilitychecksAPI Payload with "<lead_id>" "<pincode>" "<email>"
+    Given EligibilitychecksAPI Payload with "<lead_id>" "<pincode>" "<email>" "<action>"
     When calls Endpoint "Instaeligibiltychecks" with "POST" http Requests
     Then the API call got success with status code 200
     And "message" in response body is "Lead updated successfully"
@@ -53,9 +30,9 @@ Examples:
     And "data.lead.pincode" in response body is "<pincode>"
 
     Examples: 
-      | lead_id                              | pincode | email         |
-      | 2266053a-b11d-d9df-f00e-64a3cc8969b2 |  560040 | huj@gmail.com |
-      | 2266053a-b11d-d9df-f00e-64a3cc8969b2 |  560078 | huj@          |
+      | lead_id                              | pincode | email         |action|
+      | 2266053a-b11d-d9df-f00e-64a3cc8969b2 |  560040 | huj@gmail.com |business_location|
+      | 2266053a-b11d-d9df-f00e-64a3cc8969b2 |  560078 | huj@          |business_location|
 
 #-------------------------------------------------------------------------------------------------------------------------
   @quick-eligibility/business-informationAPI
@@ -85,7 +62,7 @@ Examples:
 #----------------------------------------------------------------------------------------------------------------------------
   @quick-eligibility/business-panAPI
   Scenario Outline: Verify the Buiness pan
-    Given Add Business PAN payload with values of "<Leadid>"  "<PAN>" "<action>" "<masterid>"
+    Given Add Business PAN payload with values of "<Leadid>"  "<PAN>" "<action>" <masterid>
     And call end point "Instaeligibiltychecks" and "POST" the request
     Then the API call got success with status code 200
     And "message" in response body is "Lead updated successfully"
