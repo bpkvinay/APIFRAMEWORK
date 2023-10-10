@@ -11,7 +11,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "mobile": "9567189110"
+    "mobile": "9567189111"
 }
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
@@ -23,8 +23,8 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: d3724f0e-dbe7-4885-9787-847373ed2703
-X-Runtime: 0.028138
+X-Request-Id: 749c939d-4634-4851-92aa-8683f23f382b
+X-Runtime: 0.025878
 X-XSS-Protection: 1; mode=block
 Content-Length: 47
 Connection: keep-alive
@@ -46,21 +46,22 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "mobile": "9567189110",
-    "otp": "123456"
+    "mobile": "9567189111",
+    "otp": "123456",
+    "lead_source": null
 }
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"b69f262db632ae1e7bb1e90b3faac714"
+ETag: W/"55825505c93f6bb1ffae9c22cbf03d27"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 0398cf15-51a6-405d-8a98-570f63d752ed
-X-Runtime: 0.042350
+X-Request-Id: 71db610d-2a82-43df-8697-eac1d8bc40f4
+X-Runtime: 0.048648
 X-XSS-Protection: 1; mode=block
 Content-Length: 1762
 Connection: keep-alive
@@ -69,14 +70,14 @@ Connection: keep-alive
     "message": "OTP verified successfully. Welcome .",
     "data": {
         "lead": {
-            "id": 6052,
+            "id": 6260,
             "name": null,
-            "mobile": "9567189110",
+            "mobile": "9567189111",
             "email": null,
             "dob": null,
             "pincode": null,
             "consent": true,
-            "crm_lead_id": "42bb2061-d052-edae-0875-64a3cd7db501",
+            "crm_lead_id": "7dceadf8-e7ec-a0c2-ff0f-64ba4a67a399",
             "crm_opportunity_id": null,
             "business_vintage": null,
             "industry_master_id": null,
@@ -95,8 +96,8 @@ Connection: keep-alive
             "fathers_name": null,
             "kyc_request_id": null,
             "kyc_approved": null,
-            "created_at": "2023-07-04T07:43:36.638Z",
-            "updated_at": "2023-07-04T07:43:36.638Z",
+            "created_at": "2023-07-21T09:05:37.429Z",
+            "updated_at": "2023-07-21T09:05:37.429Z",
             "cities_master_id": null,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -139,6 +140,154 @@ Connection: keep-alive
     }
 }
 Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "785643266"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 1b91c1d9-9760-41ef-aa15-70ef8029cba6
+X-Runtime: 0.024181
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "785643266",
+    "otp": "123456",
+    "lead_source": null
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: d7d222c7-2e7c-49ff-bce9-e8c575d65c8b
+X-Runtime: 0.155056
+X-XSS-Protection: 1; mode=block
+Content-Length: 108
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "Please enter a valid 10 digit Mobile to continue.",
+        "message": null,
+        "error_code": "NG-LR"
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/otp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "87654320972"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"e2bd3d45254120b9336f941fa18286bf"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: dc1d28a1-b515-4451-b527-57cafb81307d
+X-Runtime: 0.023888
+X-XSS-Protection: 1; mode=block
+Content-Length: 47
+Connection: keep-alive
+
+{
+    "message": "OTP sent successfully",
+    "data": null
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile": "87654320972",
+    "otp": "123456",
+    "lead_source": null
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 61b85f1d-dd8b-4c17-8659-d7f1294d62a9
+X-Runtime: 0.158254
+X-XSS-Protection: 1; mode=block
+Content-Length: 108
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "Please enter a valid 10 digit Mobile to continue.",
+        "message": null,
+        "error_code": "NG-LR"
+    }
+}
+Request method:	POST
 Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
 Proxy:			<none>
 Request params:	<none>
@@ -161,17 +310,17 @@ Body:
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"5e12987bd84eba412e493f348d4c7c55"
+ETag: W/"e3757a677807ef010341709515dbf0da"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 9043abbb-6219-4745-a77b-4e68fa44323f
-X-Runtime: 0.844060
+X-Request-Id: 06e2573e-5b70-4315-ab7d-fbb93e57f98b
+X-Runtime: 0.853856
 X-XSS-Protection: 1; mode=block
-Content-Length: 1767
+Content-Length: 1789
 Connection: keep-alive
 
 {
@@ -187,8 +336,8 @@ Connection: keep-alive
             "consent": true,
             "crm_lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
             "crm_opportunity_id": null,
-            "business_vintage": null,
-            "industry_master_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
             "purpose_of_loan_master_id": null,
             "nature_of_business_master_id": null,
             "referal_agent_id": null,
@@ -205,7 +354,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2023-07-04T07:36:41.720Z",
-            "updated_at": "2023-07-10T09:08:31.715Z",
+            "updated_at": "2023-07-21T09:08:39.256Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -240,7 +389,7 @@ Connection: keep-alive
             "aadhar_name": null,
             "kyc_button_clicked": null,
             "rejected_at": null,
-            "occupation_type": null,
+            "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,
             "aadhaar_mobile": null
@@ -270,17 +419,17 @@ Body:
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"f3e1f86965ec24c69d653ec863d7f0de"
+ETag: W/"0f7e1438a4699b0e545ae128168bd82f"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 6290c130-920a-4926-b636-57041b86eb8d
-X-Runtime: 0.810676
+X-Request-Id: 090620a9-aacd-48f1-8693-21885072ebc0
+X-Runtime: 0.814007
 X-XSS-Protection: 1; mode=block
-Content-Length: 1758
+Content-Length: 1780
 Connection: keep-alive
 
 {
@@ -296,8 +445,8 @@ Connection: keep-alive
             "consent": true,
             "crm_lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
             "crm_opportunity_id": null,
-            "business_vintage": null,
-            "industry_master_id": null,
+            "business_vintage": ">36 months",
+            "industry_master_id": 1,
             "purpose_of_loan_master_id": null,
             "nature_of_business_master_id": null,
             "referal_agent_id": null,
@@ -314,7 +463,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2023-07-04T07:36:41.720Z",
-            "updated_at": "2023-07-10T09:08:32.821Z",
+            "updated_at": "2023-07-21T09:08:40.477Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -349,7 +498,7 @@ Connection: keep-alive
             "aadhar_name": null,
             "kyc_button_clicked": null,
             "rejected_at": null,
-            "occupation_type": null,
+            "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,
             "aadhaar_mobile": null
@@ -370,25 +519,133 @@ Multiparts:		<none>
 Body:
 {
     "eligibility_check": {
-        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
-        "nature_of_business_id": "1",
-        "action": "nature_of_business"
+        "lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+        "occupation_type": "Business Owner",
+        "business_vintage": ">36 months",
+        "industry_master_id": 1,
+        "action": "business_information"
     }
 }
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"66196195e630356fabd5ceef2a4cd8ed"
+ETag: W/"ecc7cfc2d360dc62cf34dfb041e74e7a"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 8c658fc2-cc5e-4f1d-8091-86aebfc2b537
-X-Runtime: 0.146008
+X-Request-Id: 71a5d6d8-49ec-4122-af7c-1f9e48746df2
+X-Runtime: 0.753410
 X-XSS-Protection: 1; mode=block
-Content-Length: 1883
+Content-Length: 1783
+Connection: keep-alive
+
+{
+    "message": "Lead updated successfully",
+    "data": {
+        "lead": {
+            "business_vintage": ">36 months",
+            "occupation_type": "Business Owner",
+            "industry_master_id": 1,
+            "id": 6050,
+            "name": null,
+            "mobile": "9191910000",
+            "email": "huj@",
+            "dob": null,
+            "pincode": "560078",
+            "consent": true,
+            "crm_lead_id": "2266053a-b11d-d9df-f00e-64a3cc8969b2",
+            "crm_opportunity_id": null,
+            "purpose_of_loan_master_id": null,
+            "nature_of_business_master_id": null,
+            "referal_agent_id": null,
+            "employee_code": null,
+            "pan": null,
+            "application_type_master_id": null,
+            "digital_payments_accepted": null,
+            "entity_name": null,
+            "trading_name": null,
+            "gst_registered": null,
+            "business_registration_date": null,
+            "gender": null,
+            "fathers_name": null,
+            "kyc_request_id": null,
+            "kyc_approved": null,
+            "created_at": "2023-07-04T07:36:41.720Z",
+            "updated_at": "2023-07-21T09:08:41.556Z",
+            "cities_master_id": 130,
+            "loan_amount": "2000000.0",
+            "any_existing_live_loans": null,
+            "any_missed_payment": null,
+            "occupying_premises_since": null,
+            "size_of_business_premises": null,
+            "gstin": null,
+            "filed_itr": null,
+            "related_to_directors_of_neogrowth": null,
+            "gst_registration": null,
+            "all_info_true": null,
+            "residential_premises_master_id": null,
+            "stage_drop_off": "quick-eligibility/business-nature",
+            "approved": null,
+            "rejection_reason": null,
+            "bureau_status": "open",
+            "scorecard": "not_run",
+            "alliance_partner": null,
+            "average_digital_sales_master_id": null,
+            "average_monthly_turnover_master_id": null,
+            "business_premises_master_id": null,
+            "dsa_detail_id": null,
+            "created_by": null,
+            "same_as_permanent_address": false,
+            "nature_of_business_id": null,
+            "identity_address_proof": null,
+            "as_application_id": null,
+            "branch_name": "Bangalore",
+            "referal_agent_city_id": null,
+            "digibizz_account": null,
+            "gclid": null,
+            "aadhar_name": null,
+            "kyc_button_clicked": null,
+            "rejected_at": null,
+            "lead_source_master_id": null,
+            "gst_business_registration_date": null,
+            "aadhaar_mobile": null
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+    "nature_of_business_id": "1",
+    "action": "nature_of_business"
+}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+ETag: W/"5c6a4392bd21e27f6522ed69542926e4"
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 647adf95-9d42-43df-82b1-72f6f16ad5d2
+X-Runtime: 0.164513
+X-XSS-Protection: 1; mode=block
+Content-Length: 1891
 Connection: keep-alive
 
 {
@@ -397,11 +654,11 @@ Connection: keep-alive
         "lead": {
             "nature_of_business_id": 1,
             "id": 2839,
-            "name": null,
+            "name": "SWETHA MARAPAKA",
             "mobile": "7786768115",
-            "email": "check@gmail.com",
+            "email": "check@com",
             "dob": "1997-02-27",
-            "pincode": "560076",
+            "pincode": "560040",
             "consent": true,
             "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
             "crm_opportunity_id": null,
@@ -411,7 +668,7 @@ Connection: keep-alive
             "nature_of_business_master_id": 8,
             "referal_agent_id": null,
             "employee_code": null,
-            "pan": "BAWPM3735",
+            "pan": "BAWPM3735P",
             "application_type_master_id": 2,
             "digital_payments_accepted": null,
             "entity_name": "business one",
@@ -423,7 +680,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2022-10-19T04:53:36.849Z",
-            "updated_at": "2023-07-10T09:08:33.888Z",
+            "updated_at": "2023-07-21T09:08:42.637Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -456,7 +713,7 @@ Connection: keep-alive
             "gclid": null,
             "aadhar_name": null,
             "kyc_button_clicked": null,
-            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "rejected_at": "2023-07-21T09:07:54.000Z",
             "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,
@@ -487,17 +744,17 @@ Body:
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"ad3f80782e053ebffe0da6046d9a9311"
+ETag: W/"9e92d18e679fda2bab180d0552d4c64e"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: e665b32e-af4c-4734-8ea6-1b0decee9265
-X-Runtime: 4.877574
+X-Request-Id: 03e5e8da-b49e-4e37-a309-0b0bec06f0bd
+X-Runtime: 2.859320
 X-XSS-Protection: 1; mode=block
-Content-Length: 1900
+Content-Length: 1894
 Connection: keep-alive
 
 {
@@ -509,9 +766,9 @@ Connection: keep-alive
             "id": 2839,
             "name": "SWETHA MARAPAKA",
             "mobile": "7786768115",
-            "email": "check@gmail.com",
+            "email": "check@com",
             "dob": "1997-02-27",
-            "pincode": "560076",
+            "pincode": "560040",
             "consent": true,
             "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
             "crm_opportunity_id": null,
@@ -531,7 +788,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2022-10-19T04:53:36.849Z",
-            "updated_at": "2023-07-10T09:08:36.851Z",
+            "updated_at": "2023-07-21T09:08:43.231Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -565,12 +822,54 @@ Connection: keep-alive
             "gclid": null,
             "aadhar_name": null,
             "kyc_button_clicked": null,
-            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "rejected_at": "2023-07-21T09:07:54.000Z",
             "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,
             "aadhaar_mobile": null
         }
+    }
+}
+Request method:	POST
+Request URI:	https://uat.advancesuite.in:3071/api/v2/eligibility_checks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "eligibility_check": {
+        "lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
+        "pan": "BAWPM3735P",
+        "action": "business_pan",
+        "application_type_master_id": 2
+    }
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept, Origin
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 498fa7a5-599b-4ef1-ba89-a7fae0fd365d
+X-Runtime: 1.492582
+X-XSS-Protection: 1; mode=block
+Content-Length: 223
+Connection: keep-alive
+
+{
+    "error": {
+        "errors": "We regret to inform that you are not eligible as per our internal company norms. In case of any changes in the norms, our representative will get in touch with you.",
+        "message": null,
+        "error_code": "NG-LR"
     }
 }
 Request method:	POST
@@ -595,17 +894,17 @@ Body:
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"e1aa32038055cea32a6d39d77d77522e"
+ETag: W/"270c71fae533961cb93e238b030281aa"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 6b72c5f6-4626-4e42-8c84-bc1bff12e687
-X-Runtime: 0.152338
+X-Request-Id: 2201e3cb-6fed-4193-b3b0-2e146b87133b
+X-Runtime: 0.159830
 X-XSS-Protection: 1; mode=block
-Content-Length: 1892
+Content-Length: 1886
 Connection: keep-alive
 
 {
@@ -615,9 +914,9 @@ Connection: keep-alive
             "id": 2839,
             "name": "SWETHA MARAPAKA",
             "mobile": "7786768115",
-            "email": "check@gmail.com",
+            "email": "check@com",
             "dob": "1997-02-27",
-            "pincode": "560076",
+            "pincode": "560040",
             "consent": true,
             "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
             "crm_opportunity_id": null,
@@ -628,7 +927,7 @@ Connection: keep-alive
             "referal_agent_id": null,
             "employee_code": null,
             "pan": "BAWPM3735P",
-            "application_type_master_id": 1,
+            "application_type_master_id": 2,
             "digital_payments_accepted": null,
             "entity_name": "business one",
             "trading_name": "business one",
@@ -639,7 +938,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2022-10-19T04:53:36.849Z",
-            "updated_at": "2023-07-10T09:08:39.436Z",
+            "updated_at": "2023-07-21T09:08:47.953Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -673,7 +972,7 @@ Connection: keep-alive
             "gclid": null,
             "aadhar_name": null,
             "kyc_button_clicked": null,
-            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "rejected_at": "2023-07-21T09:08:47.000Z",
             "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,
@@ -703,17 +1002,17 @@ Body:
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-ETag: W/"f8829dfe663991d666ce33cb058ed1c1"
+ETag: W/"638edab0759b49ce8b21702e671b7400"
 Referrer-Policy: strict-origin-when-cross-origin
 Vary: Accept, Origin
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
-X-Request-Id: 48909cef-2ca6-40be-a5fa-a266b2eee7de
-X-Runtime: 0.145813
+X-Request-Id: 52fdeb70-b5b4-43a4-adaf-bc5e8195c94f
+X-Runtime: 0.149323
 X-XSS-Protection: 1; mode=block
-Content-Length: 1882
+Content-Length: 1876
 Connection: keep-alive
 
 {
@@ -724,9 +1023,9 @@ Connection: keep-alive
             "id": 2839,
             "name": "SWETHA MARAPAKA",
             "mobile": "7786768115",
-            "email": "check@gmail.com",
+            "email": "check@com",
             "dob": "1997-02-27",
-            "pincode": "560076",
+            "pincode": "560040",
             "consent": true,
             "crm_lead_id": "37faa01f-e9ab-d47f-62f8-634f828110b2",
             "crm_opportunity_id": null,
@@ -736,7 +1035,7 @@ Connection: keep-alive
             "referal_agent_id": null,
             "employee_code": null,
             "pan": "BAWPM3735P",
-            "application_type_master_id": 1,
+            "application_type_master_id": 2,
             "digital_payments_accepted": null,
             "entity_name": "business one",
             "trading_name": "business one",
@@ -747,7 +1046,7 @@ Connection: keep-alive
             "kyc_request_id": null,
             "kyc_approved": null,
             "created_at": "2022-10-19T04:53:36.849Z",
-            "updated_at": "2023-07-10T09:08:39.834Z",
+            "updated_at": "2023-07-21T09:08:48.356Z",
             "cities_master_id": 130,
             "loan_amount": "2000000.0",
             "any_existing_live_loans": null,
@@ -781,7 +1080,7 @@ Connection: keep-alive
             "gclid": null,
             "aadhar_name": null,
             "kyc_button_clicked": null,
-            "rejected_at": "2023-07-10T07:24:23.000Z",
+            "rejected_at": "2023-07-21T09:08:47.000Z",
             "occupation_type": "Business Owner",
             "lead_source_master_id": null,
             "gst_business_registration_date": null,

@@ -38,6 +38,11 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+							
+  
+    <!-- report theme -->
+    <!-- standard, dark -->
+    <theme>dark</theme>
                             <projectName>cucumber-jvm-example</projectName>
                             <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
                             <skip>false</skip>
@@ -80,6 +85,23 @@
     <version>7.3.4</version> 
     <!--$NO-MVN-MAN-VER$-->
      </dependency>
+     
+
+   
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+<dependency>
+
+    <groupId>mysql</groupId>
+
+    <artifactId>mysql-connector-java</artifactId>
+
+    <version>8.0.28</version>
+
+</dependency>
+
+
 
 
  <dependency>
@@ -148,5 +170,14 @@
 
 
 
-</dependencies>
+  	<dependency>
+  		<groupId>com.crm.NeoGrowth</groupId>
+  		<artifactId>com.crm.NeoGrowth</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  
+    
+
 </project>

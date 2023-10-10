@@ -3,20 +3,15 @@ package pojo;
 public class VerfiyOtp {
 
 
-private String MobileNumber;
+private String mobile;
 private String otp;
 private String lead_source;
 
-
-
-
-
-
-public String getMobileNumber() {
-	return MobileNumber;
+public String getmobile() {
+	return mobile;
 }
-public void setMobileNumber(String mobileNumber) {
-	MobileNumber = mobileNumber;
+public void setmobile(String mobile) {
+	this.mobile = mobile;
 }
 public String getOtp() {
 	return otp;

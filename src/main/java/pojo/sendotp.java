@@ -4,18 +4,19 @@ package pojo;
 
 public class sendotp {
 
-	private String mobilenumber;
+	private String mobile;
 
 	
 	
 	
-	public String getMobilenumber() {
-		return mobilenumber;
+	public String getMobile() {
+		return mobile;
 	}
 
-	public void setMobilenumber(String mobilenumber) {
-		this.mobilenumber = mobilenumber;
+	public void setMobile(String mobile) {
+		this.mobile= mobile;
 	}
+	
 	
 	
 
