@@ -31,94 +31,53 @@ import io.restassured.specification.ResponseSpecification;
 
 public class Utils {
 
-	
 	public static RequestSpecification req;
-	public RequestSpecification requestSpecification() throws IOException
-	{
-		
-		if(req==null) {
-		PrintStream log = new PrintStream(new FileOutputStream("Logging2.txt"));
-			
-		 req=new RequestSpecBuilder().setBaseUri(getGlobalValue("InstaBaseURL"))
-				 .addFilter(RequestLoggingFilter.logRequestTo(log))
-				 .addFilter(ResponseLoggingFilter.logResponseTo(log))
-		.setContentType(ContentType.JSON).build();
-		 return req;
+
+	public RequestSpecification requestSpecification() throws IOException {
+
+		if (req == null) {
+			PrintStream log = new PrintStream(new FileOutputStream("Logging2.txt"));
+
+			req = new RequestSpecBuilder().setBaseUri(getGlobalValue("InstaBaseURL"))
+					.addFilter(RequestLoggingFilter.logRequestTo(log))
+					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
+			return req;
 		}
-		
+
 		return req;
-		
+
 	}
-	
-	
-	public static String getGlobalValue(String key) throws IOException
-	{
-		Properties prop =new Properties();
-		FileInputStream fis =new FileInputStream(Iconstanpath.globalpath);
+
+	public static String getGlobalValue(String key) throws IOException {
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(Iconstanpath.globalpath);
 		prop.load(fis);
 		return prop.getProperty(key);
-	
-		
-		
+
 	}
-	
-	
-	public String getJsonPath(Response response,String key)
-	{
-		  String resp=response.asString();
-		JsonPath   js = new JsonPath(resp);
+
+	public String getJsonPath(Response response, String key) {
+		String resp = response.asString();
+		JsonPath js = new JsonPath(resp);
 		return js.get(key).toString();
 	}
-	
-  
-  
-  //public void 
-	
-public void EndPointwithHttpRequest(String EndPoint, String HttpRequest) throws IOException {
-		
-		
-		
-		APIResources resourceAPI=APIResources.valueOf(EndPoint);
-		ResponseSpecification resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		
-		
-		
+
+
+
+	public void EndPointwithHttpRequest(String EndPoint, String HttpRequest) throws IOException {
+
+		APIResources resourceAPI = APIResources.valueOf(EndPoint);
+		ResponseSpecification resspec = new ResponseSpecBuilder().expectStatusCode(200)
+				.expectContentType(ContentType.JSON).build();
+
 		Object response;
 		RestAssured res = null;
-		if
-		(HttpRequest.equalsIgnoreCase("POST"))
-		response=RestAssured.when().post(resourceAPI.getResource());
-		
-		else 
-			if
-			(HttpRequest.equalsIgnoreCase("GET"))
-			 response =RestAssured.when().get(resourceAPI.getResource());
-		
+		if (HttpRequest.equalsIgnoreCase("POST"))
+			response = RestAssured.when().post(resourceAPI.getResource());
+
+		else if (HttpRequest.equalsIgnoreCase("GET"))
+			response = RestAssured.when().get(resourceAPI.getResource());
+
 	}
-	 
 
-	  
-  
-
-
-
-	
 }
-
-
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
